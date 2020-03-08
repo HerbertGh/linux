@@ -1428,6 +1428,10 @@ static const struct usb_device_id products[] = {
 	{QMI_GOBI_DEVICE(0x1199, 0x901b)},	/* Sierra Wireless MC7770 */
 	{QMI_GOBI_DEVICE(0x12d1, 0x14f1)},	/* Sony Gobi 3000 Composite */
 	{QMI_GOBI_DEVICE(0x1410, 0xa021)},	/* Foxconn Gobi 3000 Modem device (Novatel E396) */
+	{QMI_FIXED_INTF(0x05c6, 0x1003, 3)},	/* Tashang TOBY-L3 */
+	{QMI_FIXED_INTF(0x05c6, 0x1004, 3)},	/* Tashang TOBY-L3 */
+	{QMI_FIXED_INTF(0x05c6, 0x1005, 3)},	/* Tashang TOBY-L3 */
+	{QMI_FIXED_INTF(0x05c6, 0x1006, 3)},	/* Tashang TOBY-L3 */
 
 	{ }					/* END */
 };
