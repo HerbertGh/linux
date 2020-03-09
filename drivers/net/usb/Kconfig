@@ -625,4 +625,13 @@ config USB_NET_AQC111
 	  This driver should work with at least the following devices:
 	  * Aquantia AQtion USB to 5GbE
 
+config USB_GOBINET
+	tristate "USB GobiNet driver for Tashang modules"
+	depends on USB_USBNET
+	help
+	  This driver should NOT work with QMI_WWAN driver simultaneously on 
+	  the same device.
+	  To compile this driver as a module, choose M here: the module named 
+	  as GobiNet.
+
 endif # USB_NET_DRIVERS
