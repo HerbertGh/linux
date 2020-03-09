@@ -654,4 +654,15 @@ config USB_SERIAL_DEBUG
 	  To compile this driver as a module, choose M here: the
 	  module will be called usb-debug.
 
+config USB_SERIAL_GOBI
+	tristate "USB Gobi Serial Driver"
+	select USB_SERIAL_GOBI
+	depends on USB_SERIAL=y
+	help
+	  Say Y here for Tashang modules. 
+	  These are driver depends on the usb_serial module driver.
+
+	  To compile this driver as a module, choose M here: the
+	  module will be called GobiSerial.
+
 endif # USB_SERIAL
